@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   	android:background="@drawable/bg_mainpage">
+
+    
+	<LinearLayout
+	    android:id="@+id/topGroup"
+	    android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/tab">
+
+		<TextView
+		    android:id="@+id/mainTopText"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="30dp"
+		    android:fontFamily="Malgun Gothic"
+		    android:text="Check Your Self!"
+		    android:layout_gravity="center"
+		    android:textColor="#FFFFFF"
+		    android:textSize="30sp" />
+	    
+	</LinearLayout>
+    <Button 
+        android:id="@+id/Calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:hint="Calendar"
+        android:onClick="btnClick"
+        android:background="@drawable/ibt1"/>
+    
+    <Button
+        android:id="@+id/Schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Schedule"
+        android:onClick="btnClick"
+        android:background="@drawable/ibt1"/>
+    
+
+</LinearLayout>

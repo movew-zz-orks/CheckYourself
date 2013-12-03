@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/listview">
+    
+    <LinearLayout
+	    android:id="@+id/topGroup"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/tab">
+
+        <Button
+            android:id="@+id/backBtn2"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/left"
+            android:onClick="addBtn" />
+
+		<TextView
+	    	android:id="@+id/mainTopText"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginLeft="60dp"
+	    	android:layout_marginTop="30dp"
+	    	android:fontFamily="Malgun Gothic"
+	    	android:text="Schedule"
+	    	android:textColor="#FFFFFF"
+	    	android:textSize="30sp" />
+
+		<Button
+		    android:id="@+id/addBtn2"
+		    android:layout_width="50dp"
+		    android:layout_height="50dp"
+		    android:layout_marginLeft="45dp"
+		    android:layout_marginTop="26dp"
+		    android:background="@drawable/addbtn"
+		    android:onClick="addBtn" />
+	    
+	</LinearLayout>
+    
+<ListView 
+    android:id="@android:id/list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</ListView>
+<TextView 
+    android:id="@android:id/empty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/no_todos"/>
+    
+
+</LinearLayout>
